@@ -4,6 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".OnboardingActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/on_boarding_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="570dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/prev_btn"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:background="@drawable/slider_button_outline"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Sebelumnya"
+        android:textColor="@color/orange_primary"
+        android:layout_marginStart="20dp"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/next_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/next_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_btn"
+            android:layout_width="114dp"
+            android:layout_height="38dp"
+            android:background="@drawable/slider_button"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Masuk"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"
+            android:textSize="12dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
